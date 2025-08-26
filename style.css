@@ -1,0 +1,228 @@
+/* RESET GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+}
+
+/* MENU FIXO */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(175, 5, 116);
+    height: 68px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* LOGO */
+.logo img {
+    width: 60px;
+    margin-top: 12px;
+    margin-left: 75px;
+}
+
+/* NAVEGAÇÃO */
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin-right: 50px;
+    color: #fff;
+    padding: 20px;
+    font-size: 1.4rem;
+}
+
+/* LINKS DO MENU */
+li a {
+    display: block;
+    height: 100%;
+    color: #fff;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+/* HOVER DOS LINKS */
+li a:hover {
+    background-color: rgb(244, 95, 212);
+    border-radius: 80px;
+}
+
+/* HERO SECTION */
+.parte-1 {
+    width: 100vw;
+    height: 100vh;
+    background: url(img/unha.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    color: white;
+}
+
+/* TEXTO PRINCIPAL */
+.hero h1 {
+    font-size: 3.8rem;
+    margin-bottom: 45px;
+    text-shadow: 1px 1px 2px #000;
+    margin-right: 750px;
+    color: rgb(244, 95, 212);
+    max-width: 680px;
+    margin-top: -55px;
+}
+
+.hero p {
+    font-size: 1.9rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    color: #000;
+    font-weight: bold;
+    margin-right: 820px;
+}
+
+/* BOTÃO PRINCIPAL */
+.botao-primario {
+    background-color: rgb(175, 5, 116);
+    color: white;
+    padding: 25px 50px;
+    border: none;
+    border-radius: 40px;
+    font-size: 1.9rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-right: 770px;
+    margin-top: 50px;
+}
+
+.botao-primario:hover {
+    background-color: rgb(255, 142, 224);
+}
+
+/* SEÇÕES GERAIS */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: rgb(175, 5, 116);
+}
+
+section p, section ul {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+    color: #333;
+}
+
+section ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+/* BOTÃO WHATSAPP */
+.botao-whatsapp {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 40px;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.botao-whatsapp:hover {
+    background-color: #1ebe5c;
+}
+
+/* RESPONSIVIDADE */
+
+/* TABLETS */
+@media (max-width: 1024px) {
+    .logo img {
+        margin-left: 30px;
+    }
+
+    .nav-links ul {
+        gap: 15px;
+        font-size: 1.2rem;
+        margin-right: 20px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        margin-right: 0;
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+        margin-right: 0;
+        max-width: 90%;
+    }
+
+    .botao-primario {
+        margin-right: 0;
+    }
+}
+
+/* CELULARES */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .logo img {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+        margin-top: 0;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .botao-primario {
+        font-size: 1.2rem;
+        padding: 15px 30px;
+        margin-top: 30px;
+    }
+
+    .parte-1 {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    section p, section ul {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+}
