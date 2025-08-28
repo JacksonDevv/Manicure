@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(175, 5, 116);
+    background-color: rgb(91, 3, 60);
     height: 68px;
     position: fixed;
     top: 0;
@@ -68,31 +68,31 @@ li a:hover {
     text-align: center;
     padding: 0 20px;
     color: white;
+    margin-top: -45px;
 }
 
 /* TEXTO PRINCIPAL */
 .hero h1 {
     font-size: 3.8rem;
     margin-bottom: 45px;
-    text-shadow: 1px 1px 2px #000;
     margin-right: 750px;
-    color: rgb(244, 95, 212);
+    color: rgb(0, 0, 0);
     max-width: 680px;
-    margin-top: -55px;
 }
 
 .hero p {
-    font-size: 1.9rem;
+    font-size: 2.0rem;
     margin-bottom: 30px;
-    max-width: 600px;
+    max-width: 390px;
     color: #000;
-    font-weight: bold;
-    margin-right: 820px;
+    font-weight: normal;
+    margin-right: 930px;
+    font-family: roboto;
 }
 
 /* BOTÃO PRINCIPAL */
 .botao-primario {
-    background-color: rgb(175, 5, 116);
+    background-color: rgb(91, 3, 60);
     color: white;
     padding: 25px 50px;
     border: none;
@@ -101,7 +101,7 @@ li a:hover {
     cursor: pointer;
     transition: 0.3s;
     margin-right: 770px;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .botao-primario:hover {
@@ -147,82 +147,89 @@ section ul li {
     background-color: #1ebe5c;
 }
 
+.sobre-nos{
+    width: 100vw;
+    height: 100vh;
+    background: url(img/unhaflores.jpg);
+    background-size: cover;    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.sobre-nos p{
+    margin-top: 50px;
+    color: #000;
+    max-width: 800px;
+    font-size: 2.4rem;
+    font-family: roboto;
+    margin-left: 650px;
+    font-weight: normal;
+}
+
+.sobre-nos h2{
+    margin-top: 110px;
+    font-family: roboto;
+    font-size: 75px;
+    margin-left: 710px;
+    font-weight: bold;
+    max-width: 650px;
+}
+
 /* RESPONSIVIDADE */
 
 /* TABLETS */
 @media (max-width: 1024px) {
     .logo img {
-        margin-left: 30px;
+        margin-left: 165px;
     }
 
     .nav-links ul {
         gap: 15px;
         font-size: 1.2rem;
         margin-right: 20px;
+        display: none;
     }
 
     .hero h1 {
-        font-size: 3rem;
+        font-size: 2.8rem;
         margin-right: 0;
         text-align: center;
-        max-width: 90%;
+        font-family: roboto;
+        margin-top: 35px;
     }
 
     .hero p {
         font-size: 1.5rem;
-        margin-right: 0;
+        margin-right: 1rem;
         max-width: 90%;
+        color: #010101;
+        font-weight: normal;
+        font-family: cursive;
     }
 
     .botao-primario {
         margin-right: 0;
     }
+
+    .sobre-nos {
+    width: 100vw;
+    height: 100vh;
+    background: url('img/unhaflores.jpg') no-repeat center center;
+    background-size: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-/* CELULARES */
-@media (max-width: 768px) {
-    .menu {
-        flex-direction: column;
-        height: auto;
-        padding: 10px 0;
-    }
 
-    .logo img {
-        margin-left: 0;
-        margin-top: 0;
-    }
+.sobre-nos h2{
+    margin-right: 710px;
+    font-size: 30px;
+    min-width: 250px;
+    margin-top: 280px; 
+}
 
-    .nav-links ul {
-        flex-direction: column;
-        gap: 10px;
-        margin: 10px 0;
-    }
-
-    .hero h1 {
-        font-size: 2.2rem;
-        margin-top: 0;
-    }
-
-    .hero p {
-        font-size: 1.2rem;
-    }
-
-    .botao-primario {
-        font-size: 1.2rem;
-        padding: 15px 30px;
-        margin-top: 30px;
-    }
-
-    .parte-1 {
-        padding: 20px;
-    }
-
-    section h2 {
-        font-size: 1.8rem;
-    }
-
-    section p, section ul {
-        font-size: 1rem;
-        max-width: 90%;
-    }
 }
